@@ -20,6 +20,8 @@ namespace _6_aspnetcore_services_dependency_injection
             builder.Services.AddScoped<ICitiesService, CitiesService>();
             //builder.Services.AddSingleton<ICitiesService, CitiesService>();
 
+            //plugins nuget: Autofac, Autofac.Extensions.DependencyInjection. questi per usare un'alternativa al default system di dependency injections ect
+
 
             var app = builder.Build();
 
