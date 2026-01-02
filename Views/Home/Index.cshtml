@@ -1,11 +1,16 @@
-﻿@model IEnumerable<string>
+﻿@using MyServiceLibrary_Contracts
+@model IEnumerable<string>
+@inject ICitiesService citiesServiceInView
 @{
     ViewBag.Title = "Home";
 }
 
 <h1>Cities</h1>
+@{
+    List<string> citiesFromServiceInView = citiesServiceInView.GetCities();  //injection in view
+}
 <ul class="list">
-    @foreach (string city in Model)
+    @foreach (string city in citiesFromServiceInView)
     {
         <li>@city</li>
     }
@@ -14,6 +19,8 @@
 <div>@ViewBag.IstanceId_CitiesService_1</div>
 <div>@ViewBag.IstanceId_CitiesService_2 </div>
 <div>@ViewBag.IstanceId_CitiesService_3 </div>
+
+<div>@citiesServiceInView.ServiceInstanceId</div>
 
 <div class="box">
     @ViewBag.IstanceId_CitiesServices_InScope
