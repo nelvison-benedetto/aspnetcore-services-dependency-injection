@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="6-aspnetcore-services-dependency-injection.csproj" />
+  <Project Path="MyServicesLibrary/MyServicesLibrary.csproj" />
 </Solution>

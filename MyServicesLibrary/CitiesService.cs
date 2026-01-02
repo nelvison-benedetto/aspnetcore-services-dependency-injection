@@ -1,6 +1,8 @@
-﻿namespace MyServicesLibrary;
+﻿
 
-public class CitiesService
+namespace MyServicesLibrary;
+
+public class CitiesService : ICitiesService
 {
     private List<string> _cities;
 
