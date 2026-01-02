@@ -1,5 +1,5 @@
 ﻿
-
+using MyServiceLibrary_Contracts;
 namespace MyServicesLibrary;
 
 public class CitiesService : ICitiesService

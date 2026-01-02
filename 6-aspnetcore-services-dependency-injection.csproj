@@ -7,4 +7,13 @@
     <RootNamespace>_6_aspnetcore_services_dependency_injection</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="MyServiceLibrary_Contracts\MyServiceLibrary_Contracts.csproj" />
+    <ProjectReference Include="MyServicesLibrary\MyServicesLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
